@@ -6,24 +6,30 @@ font-family:"Lucida Console","Courier New",monospace;
 }
 
 body{
-background-image:url('descarga.gif');
+background-image:url('fondo.jpg');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 background-attachment:fixed;
 min-height:100vh;
+width:100%;
 color:white;
+position:relative;
+
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-/* capa oscura para que el texto se vea mejor */
+/* capa oscura */
 
 body::before{
 content:"";
-position:absolute;
+position:fixed;
 top:0;
 left:0;
-width:150%;
-height:150%;
+width:100%;
+height:100%;
 background:rgba(0,0,0,0.6);
 z-index:-1;
 pointer-events:none;
@@ -40,19 +46,22 @@ header h1{
 font-size:40px;
 }
 
-/* menu */
+/* menu moderno */
 
 nav{
 margin-top:20px;
-position:relative;
-z-index:10;
+display:flex;
+justify-content:center;
 }
 
 nav ul{
 display:flex;
-justify-content:center;
 gap:40px;
 list-style:none;
+background:rgba(0,0,0,0.4);
+padding:10px 30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
 }
 
 nav a{
@@ -119,10 +128,26 @@ font-size:14px;
 
 .presentacion{
 max-width:900px;
-background:rgba(0,0,0,0.5);
-padding:30px;
-border-radius:10px;
-margin-top:160px;
+background:rgba(0,0,0,0.4);
+padding:40px;
+border-radius:15px;
+margin:120px auto;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+animation:aparecer 1s ease;
+}
+
+/* animacion de entrada */
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 /* estructura tipo curriculum */
@@ -172,7 +197,8 @@ transition:0.3s;
 }
 
 .iconosTech img:hover{
-transform:scale(1.2);
+transform:scale(1.2) rotate(5deg);
+filter:drop-shadow(0 0 10px white);
 }
 
 /* redes */
