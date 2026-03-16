@@ -1,188 +1,180 @@
-function cambiarIdioma(idioma){
+function cambiarIdioma(idioma) {
 
-const textos = {
+    const textos = {
 
-es:{
-titulo:"Sobre mí",
-tituloContacto:"Contacto",
-tituloAcerca:"Acerca de mí",
+        es: {
+            titulo: "Sobre mí",
+            tituloContacto: "Contacto",
+            tituloAcerca: "Acerca de mí",
 
-navInicio:"Inicio",
-navAcerca:"Acerca de",
-navContacto:"Contacto",
+            navInicio: "Inicio",
+            navAcerca: "Acerca de",
+            navContacto: "Contacto",
 
-bioTitulo:"Biografía",
+            bioTitulo: "Biografía",
+            bio1: "Hola, mi nombre es Valentín Castrillo. Soy de Argentina, más específicamente de Viedma, Río Negro. Desde chico siempre tuve curiosidad por la tecnología y por entender cómo funcionan las cosas.",
+            bio2: "Con el tiempo esa curiosidad se convirtió en una pasión. Me gusta aprender constantemente sobre computación, software y nuevas herramientas tecnológicas.",
+            bio3: "Actualmente sigo desarrollando mis habilidades en el mundo de la tecnología, combinando conocimientos de hardware, software y programación, con el objetivo de seguir creciendo profesionalmente.",
+            bio4: "Actualmente estoy iniciando mi camino en el mundo freelance.",
 
-bio1:"Hola, ¿qué tal? Mi nombre es Valentin Castrillo. Soy el menor de tres hermanos y soy de Argentina, más específicamente de Viedma, Río Negro.",
-bio2:"Vengo de una familia que desde chico me enseñó el valor de la dedicación y el esfuerzo.",
-bio3:"Aún recuerdo cuando terminé el secundario. En ese momento había muchas opciones y caminos posibles.",
-bio4:"Actualmente estoy iniciando mi camino en el mundo freelance.",
+            intereses: "🎯 Intereses",
+            i1: "💻 Tecnología y computación",
+            i2: "🎮 Videojuegos",
+            i3: "🚴 Andar en bicicleta",
+            i4: "⚽ Jugar al fútbol con amigos",
+            i5: "🎸 Tocar la guitarra y el piano",
 
-intereses:"🎯 Intereses",
+            contactoTitulo: "📬 Contactame",
+            contactoTexto: "Podés comunicarte conmigo a través de mis redes sociales:",
 
-i1:"💻 Tecnología y computación",
-i2:"🎮 Videojuegos",
-i3:"🚴 Andar en bicicleta",
-i4:"⚽ Jugar al fútbol con amigos",
-i5:"🎸 Tocar la guitarra y el piano",
+            habilidades: "💻 Habilidades",
+            h1: "📱 Reparación de celulares",
+            h2: "🐧 Distros Linux",
+            h3: "⚙️ Software libre",
 
-contactoTitulo:"📬 Contactame",
-contactoTexto:"Podés comunicarte conmigo a través de mis redes sociales:",
+            tec: "🧑‍💻 Tecnologías que uso"
+        },
 
-habilidades:"💻 Habilidades",
-h1:"📱 Reparación de celulares",
-h2:"🐧 Distros Linux",
-h3:"⚙️ Software libre",
+        en: {
+            titulo: "About Me",
+            tituloContacto: "Contact",
+            tituloAcerca: "About Me",
 
-tec:"🧑‍💻 Tecnologías que uso"
-},
+            navInicio: "Home",
+            navAcerca: "About",
+            navContacto: "Contact",
 
-en:{
-titulo:"About Me",
-tituloContacto:"Contact",
-tituloAcerca:"About Me",
+            bioTitulo: "Biography",
+            bio1: "Hello! My name is Valentin Castrillo. I am from Argentina, specifically Viedma, Río Negro. Since I was young, I have always been curious about technology and understanding how things work.",
+            bio2: "Over time, this curiosity turned into a passion. I enjoy constantly learning about computing, software, and new technological tools.",
+            bio3: "Currently, I continue developing my skills in technology, combining knowledge of hardware, software, and programming to grow professionally.",
+            bio4: "I am starting my journey in the freelance world.",
 
-navInicio:"Home",
-navAcerca:"About",
-navContacto:"Contact",
+            intereses: "🎯 Interests",
+            i1: "💻 Technology and computing",
+            i2: "🎮 Videogames",
+            i3: "🚴 Riding a bicycle",
+            i4: "⚽ Playing soccer with friends",
+            i5: "🎸 Playing guitar and piano",
 
-bioTitulo:"Biography",
+            contactoTitulo: "📬 Contact Me",
+            contactoTexto: "You can contact me through my social networks:",
 
-bio1:"Hello! My name is Valentin Castrillo. I am the youngest of three siblings and I am from Argentina.",
-bio2:"I come from a family that taught me dedication and hard work.",
-bio3:"I still remember when I finished high school and many paths were ahead.",
-bio4:"I am starting my journey in the freelance world.",
+            habilidades: "💻 Skills",
+            h1: "📱 Phone repair",
+            h2: "🐧 Linux distros",
+            h3: "⚙️ Free software",
 
-intereses:"🎯 Interests",
+            tec: "🧑‍💻 Technologies I use"
+        },
 
-i1:"💻 Technology and computing",
-i2:"🎮 Videogames",
-i3:"🚴 Riding a bicycle",
-i4:"⚽ Playing soccer with friends",
-i5:"🎸 Playing guitar and piano",
+        pt: {
+            titulo: "Sobre Mim",
+            tituloContacto: "Contato",
+            tituloAcerca: "Sobre Mim",
 
-contactoTitulo:"📬 Contact Me",
-contactoTexto:"You can contact me through my social networks:",
+            navInicio: "Início",
+            navAcerca: "Sobre",
+            navContacto: "Contato",
 
-habilidades:"💻 Skills",
-h1:"📱 Phone repair",
-h2:"🐧 Linux distros",
-h3:"⚙️ Free software",
+            bioTitulo: "Biografia",
+            bio1: "Olá! Meu nome é Valentin Castrillo. Sou da Argentina, mais especificamente de Viedma, Río Negro. Desde pequeno sempre tive curiosidade pela tecnologia e como as coisas funcionam.",
+            bio2: "Com o tempo, essa curiosidade se tornou uma paixão. Gosto de aprender constantemente sobre computação, software e novas ferramentas tecnológicas.",
+            bio3: "Atualmente continuo desenvolvendo minhas habilidades no mundo da tecnologia, combinando conhecimento de hardware, software e programação para crescer profissionalmente.",
+            bio4: "Estou começando minha jornada no mundo freelance.",
 
-tec:"🧑‍💻 Technologies I use"
-},
+            interesses: "🎯 Interesses",
+            i1: "💻 Tecnologia e computação",
+            i2: "🎮 Videogames",
+            i3: "🚴 Andar de bicicleta",
+            i4: "⚽ Jogar futebol com amigos",
+            i5: "🎸 Tocar guitarra e piano",
 
-pt:{
-titulo:"Sobre Mim",
-tituloContacto:"Contato",
-tituloAcerca:"Sobre Mim",
+            contactoTitulo: "📬 Fale comigo",
+            contactoTexto: "Você pode entrar em contato comigo através das minhas redes sociais:",
 
-navInicio:"Início",
-navAcerca:"Sobre",
-navContacto:"Contato",
+            habilidades: "💻 Habilidades",
+            h1: "📱 Reparo de celulares",
+            h2: "🐧 Distros Linux",
+            h3: "⚙️ Software livre",
 
-bioTitulo:"Biografia",
+            tec: "🧑‍💻 Tecnologias que uso"
+        },
 
-bio1:"Olá! Meu nome é Valentin Castrillo.",
-bio2:"Venho de uma família que me ensinou dedicação e esforço.",
-bio3:"Ainda lembro quando terminei o ensino médio.",
-bio4:"Estou começando minha jornada no mundo freelance.",
+        jp: {
+            titulo: "私について",
+            tituloContacto: "連絡先",
+            tituloAcerca: "自己紹介",
 
-intereses:"🎯 Interesses",
+            navInicio: "ホーム",
+            navAcerca: "概要",
+            navContacto: "連絡先",
 
-i1:"💻 Tecnologia e computação",
-i2:"🎮 Videogames",
-i3:"🚴 Andar de bicicleta",
-i4:"⚽ Jogar futebol com amigos",
-i5:"🎸 Tocar guitarra e piano",
+            bioTitulo: "経歴",
+            bio1: "こんにちは。私の名前はバレンティン・カストリジョです。私はアルゼンチンのビエドマ出身です。子供の頃から技術に興味を持っていました。",
+            bio2: "その好奇心はやがて情熱となりました。常にコンピュータやソフトウェア、新しい技術ツールを学ぶのが好きです。",
+            bio3: "現在、ハードウェア、ソフトウェア、プログラミングの知識を組み合わせてスキルを伸ばしています。",
+            bio4: "現在フリーランスの世界に挑戦しています。",
 
-contactoTitulo:"📬 Fale comigo",
-contactoTexto:"Você pode entrar em contato comigo através das minhas redes sociais:",
+            intereses: "🎯 興味",
+            i1: "💻 テクノロジーとコンピューター",
+            i2: "🎮 ビデオゲーム",
+            i3: "🚴 自転車に乗ること",
+            i4: "⚽ 友達とサッカー",
+            i5: "🎸 ギターとピアノ",
 
-habilidades:"💻 Habilidades",
-h1:"📱 Reparo de celulares",
-h2:"🐧 Distros Linux",
-h3:"⚙️ Software livre",
+            contactoTitulo: "📬 お問い合わせ",
+            contactoTexto: "私のSNSを通じて連絡できます:",
 
-tec:"🧑‍💻 Tecnologias que uso"
-},
+            habilidades: "💻 スキル",
+            h1: "📱 携帯電話修理",
+            h2: "🐧 Linux ディストリビューション",
+            h3: "⚙️ フリーソフトウェア",
 
-jp:{
-titulo:"私について",
-tituloContacto:"連絡先",
-tituloAcerca:"自己紹介",
+            tec: "🧑‍💻 使用している技術"
+        }
 
-navInicio:"ホーム",
-navAcerca:"概要",
-navContacto:"連絡先",
+    };
 
-bioTitulo:"経歴",
+    const t = textos[idioma];
 
-bio1:"こんにちは。私の名前はバレンティン・カストリジョです。",
-bio2:"私は子供の頃から努力の大切さを教えられました。",
-bio3:"高校を卒業した時、多くの可能性がありました。",
-bio4:"現在フリーランスの世界に挑戦しています。",
+    function cambiar(id, texto) {
+        const elemento = document.getElementById(id);
+        if (elemento) {
+            elemento.innerText = texto;
+        }
+    }
 
-intereses:"🎯 興味",
+    // Cambiar todos los textos de la página
+    cambiar("titulo", t.titulo);
+    cambiar("tituloContacto", t.tituloContacto);
+    cambiar("tituloAcerca", t.tituloAcerca);
 
-i1:"💻 テクノロジーとコンピューター",
-i2:"🎮 ビデオゲーム",
-i3:"🚴 自転車に乗ること",
-i4:"⚽ 友達とサッカー",
-i5:"🎸 ギターとピアノ",
+    cambiar("navInicio", t.navInicio);
+    cambiar("navAcerca", t.navAcerca);
+    cambiar("navContacto", t.navContacto);
 
-contactoTitulo:"📬 お問い合わせ",
-contactoTexto:"私のSNSを通じて連絡できます:",
+    cambiar("bioTitulo", t.bioTitulo);
+    cambiar("bio1", t.bio1);
+    cambiar("bio2", t.bio2);
+    cambiar("bio3", t.bio3);
+    cambiar("bio4", t.bio4);
 
-habilidades:"💻 スキル",
-h1:"📱 携帯電話修理",
-h2:"🐧 Linux ディストリビューション",
-h3:"⚙️ フリーソフトウェア",
+    cambiar("interesesTitulo", t.intereses);
 
-tec:"🧑‍💻 使用している技術"
-}
+    cambiar("i1", t.i1);
+    cambiar("i2", t.i2);
+    cambiar("i3", t.i3);
+    cambiar("i4", t.i4);
+    cambiar("i5", t.i5);
 
-};
+    cambiar("contactoTitulo", t.contactoTitulo);
+    cambiar("contactoTexto", t.contactoTexto);
 
-const t = textos[idioma];
+    cambiar("habilidadesTitulo", t.habilidades);
+    cambiar("h1", t.h1);
+    cambiar("h2", t.h2);
+    cambiar("h3", t.h3);
 
-function cambiar(id, texto){
-const elemento = document.getElementById(id);
-if(elemento){
-elemento.innerText = texto;
-}
-}
-
-cambiar("titulo",t.titulo);
-cambiar("tituloContacto",t.tituloContacto);
-cambiar("tituloAcerca",t.tituloAcerca);
-
-cambiar("navInicio",t.navInicio);
-cambiar("navAcerca",t.navAcerca);
-cambiar("navContacto",t.navContacto);
-
-cambiar("bioTitulo",t.bioTitulo);
-cambiar("bio1",t.bio1);
-cambiar("bio2",t.bio2);
-cambiar("bio3",t.bio3);
-cambiar("bio4",t.bio4);
-
-cambiar("interesesTitulo",t.intereses);
-
-cambiar("i1",t.i1);
-cambiar("i2",t.i2);
-cambiar("i3",t.i3);
-cambiar("i4",t.i4);
-cambiar("i5",t.i5);
-
-cambiar("contactoTitulo",t.contactoTitulo);
-cambiar("contactoTexto",t.contactoTexto);
-
-cambiar("habilidadesTitulo",t.habilidades);
-cambiar("h1",t.h1);
-cambiar("h2",t.h2);
-cambiar("h3",t.h3);
-
-cambiar("tecTitulo",t.tec);
-
+    cambiar("tecTitulo", t.tec);
 }
