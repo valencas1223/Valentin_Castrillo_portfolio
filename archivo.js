@@ -17,22 +17,22 @@ function cambiarIdioma(idioma) {
             bio3: "Actualmente sigo desarrollando mis habilidades en el mundo de la tecnología, combinando conocimientos de hardware, software y programación, con el objetivo de seguir creciendo profesionalmente.",
             bio4: "Actualmente estoy iniciando mi camino en el mundo freelance.",
 
-            intereses: "🎯 Intereses",
-            i1: "💻 Tecnología y computación",
-            i2: "🎮 Videojuegos",
-            i3: "🚴 Andar en bicicleta",
-            i4: "⚽ Jugar al fútbol con amigos",
-            i5: "🎸 Tocar la guitarra y el piano",
+            intereses: "Intereses",
+            i1: "Tecnología y computación",
+            i2: "Videojuegos",
+            i3: "Andar en bicicleta",
+            i4: "Jugar al fútbol con amigos",
+            i5: "Tocar la guitarra y el piano",
 
-            contactoTitulo: "📬 Contactame",
+            contactoTitulo: "Contactame",
             contactoTexto: "Podés comunicarte conmigo a través de mis redes sociales:",
 
-            habilidades: "💻 Habilidades",
-            h1: "📱 Reparación de celulares",
-            h2: "🐧 Distros Linux",
-            h3: "⚙️ Software libre",
+            habilidades: "Habilidades",
+            h1: "Reparación de celulares",
+            h2: "Distros Linux",
+            h3: "Software libre",
 
-            tec: "🧑‍💻 Tecnologías que uso"
+            tec: "Tecnologías que uso"
         },
 
         en: {
@@ -50,22 +50,22 @@ function cambiarIdioma(idioma) {
             bio3: "Currently, I continue developing my skills in technology, combining knowledge of hardware, software, and programming to grow professionally.",
             bio4: "I am starting my journey in the freelance world.",
 
-            intereses: "🎯 Interests",
-            i1: "💻 Technology and computing",
-            i2: "🎮 Videogames",
-            i3: "🚴 Riding a bicycle",
-            i4: "⚽ Playing soccer with friends",
-            i5: "🎸 Playing guitar and piano",
+            intereses: "Interests",
+            i1: "Technology and computing",
+            i2: "Videogames",
+            i3: "Riding a bicycle",
+            i4: "Playing soccer with friends",
+            i5: "Playing guitar and piano",
 
-            contactoTitulo: "📬 Contact Me",
+            contactoTitulo: "Contact Me",
             contactoTexto: "You can contact me through my social networks:",
 
-            habilidades: "💻 Skills",
-            h1: "📱 Phone repair",
-            h2: "🐧 Linux distros",
-            h3: "⚙️ Free software",
+            habilidades: "Skills",
+            h1: "Phone repair",
+            h2: "Linux distros",
+            h3: "Free software",
 
-            tec: "🧑‍💻 Technologies I use"
+            tec: "Technologies I use"
         },
 
         pt: {
@@ -83,22 +83,22 @@ function cambiarIdioma(idioma) {
             bio3: "Atualmente continuo desenvolvendo minhas habilidades no mundo da tecnologia, combinando conhecimento de hardware, software e programação para crescer profissionalmente.",
             bio4: "Estou começando minha jornada no mundo freelance.",
 
-            interesses: "🎯 Interesses",
-            i1: "💻 Tecnologia e computação",
-            i2: "🎮 Videogames",
-            i3: "🚴 Andar de bicicleta",
-            i4: "⚽ Jogar futebol com amigos",
-            i5: "🎸 Tocar guitarra e piano",
+            interesses: "Interesses",
+            i1: "Tecnologia e computação",
+            i2: "Videogames",
+            i3: "Andar de bicicleta",
+            i4: "Jogar futebol com amigos",
+            i5: "Tocar guitarra e piano",
 
-            contactoTitulo: "📬 Fale comigo",
+            contactoTitulo: "Fale comigo",
             contactoTexto: "Você pode entrar em contato comigo através das minhas redes sociais:",
 
-            habilidades: "💻 Habilidades",
-            h1: "📱 Reparo de celulares",
-            h2: "🐧 Distros Linux",
-            h3: "⚙️ Software livre",
+            habilidades: "Habilidades",
+            h1: "Reparo de celulares",
+            h2: "Distros Linux",
+            h3: "Software livre",
 
-            tec: "🧑‍💻 Tecnologias que uso"
+            tec: "Tecnologias que uso"
         },
 
         jp: {
@@ -116,22 +116,22 @@ function cambiarIdioma(idioma) {
             bio3: "現在、ハードウェア、ソフトウェア、プログラミングの知識を組み合わせてスキルを伸ばしています。",
             bio4: "現在フリーランスの世界に挑戦しています。",
 
-            intereses: "🎯 興味",
-            i1: "💻 テクノロジーとコンピューター",
-            i2: "🎮 ビデオゲーム",
-            i3: "🚴 自転車に乗ること",
-            i4: "⚽ 友達とサッカー",
-            i5: "🎸 ギターとピアノ",
+            intereses: "興味",
+            i1: "テクノロジーとコンピューター",
+            i2: "ビデオゲーム",
+            i3: "自転車に乗ること",
+            i4: "友達とサッカー",
+            i5: "ギターとピアノ",
 
-            contactoTitulo: "📬 お問い合わせ",
+            contactoTitulo: "お問い合わせ",
             contactoTexto: "私のSNSを通じて連絡できます:",
 
-            habilidades: "💻 スキル",
-            h1: "📱 携帯電話修理",
-            h2: "🐧 Linux ディストリビューション",
-            h3: "⚙️ フリーソフトウェア",
+            habilidades: "スキル",
+            h1: "携帯電話修理",
+            h2: "Linux ディストリビューション",
+            h3: "フリーソフトウェア",
 
-            tec: "🧑‍💻 使用している技術"
+            tec: "使用している技術"
         }
 
     };
